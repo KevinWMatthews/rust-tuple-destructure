@@ -1,0 +1,19 @@
+[package]
+name = "rust-tuple-destructure"
+version = "0.1.0"
+authors = ["Kevin W Matthews <KevinWMatthews@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "destructure"
+path = "src/destructure.rs"
+
+[[bin]]
+name = "destructure_ref"
+path = "src/destructure_ref.rs"
+
+[[bin]]
+name = "intro"
+path = "src/intro.rs"
