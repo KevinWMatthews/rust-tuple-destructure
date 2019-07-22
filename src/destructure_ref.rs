@@ -30,7 +30,7 @@ fn non_copy_type() {
     let (box1, box2) = &the_tuple;
 
     // Older Rust may require:
-    let &(ref box1, ref box2) = &the_tuple;
+    // let &(ref box1, ref box2) = &the_tuple;
 
     // `*box` dereferences the `&Box`, giving the actual Box.
     // `let` tries to move the Box into x, but this isn't allowed:
