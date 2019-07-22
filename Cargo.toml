@@ -15,5 +15,9 @@ name = "destructure_ref"
 path = "src/destructure_ref.rs"
 
 [[bin]]
+name = "example"
+path = "src/example.rs"
+
+[[bin]]
 name = "intro"
 path = "src/intro.rs"

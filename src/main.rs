@@ -92,10 +92,10 @@ fn ref_pattern2() {
     let y = **box2;
 }
 
-use std::sync::{Arc, Mutex, Condvar};
-
 #[allow(unused)]
 fn real_world_condvar() {
+    use std::sync::{Arc, Mutex, Condvar};
+
     let pair = Arc::new((Box::new(1), Box::new(2)));
     let (x, y) = &*pair;
 
