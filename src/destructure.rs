@@ -20,11 +20,11 @@ fn copy_type() {
 fn non_copy_type() {
     let the_tuple = (Box::new(1), Box::new(2));
 
-    // Elements are moved out of the tuple
+    // Moves boxes out of tuple
     let (box1, box2) = the_tuple;
     let x = *box1;
     let y = *box2;
 
-    // Can't use the tuple again - the Boxes were moved
+    // Can't use again - the Boxes were moved out of the tuple.
     // let (box1, box2) = the_tuple;
 }
