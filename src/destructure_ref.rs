@@ -44,5 +44,5 @@ fn non_copy_type() {
     let y = **box2;
 
     // Can still use the tuple
-    let (box1, box2) = the_tuple;
+    let (box1, box2) = &the_tuple;
 }
