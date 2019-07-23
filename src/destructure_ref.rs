@@ -1,9 +1,10 @@
+#![allow(unused)]
+
 fn main() {
     copy_type();
     non_copy_type();
 }
 
-#[allow(unused)]
 fn copy_type() {
     let the_tuple = (1, 2, 3);
 
@@ -21,7 +22,6 @@ fn copy_type() {
     let z = *rz;
 }
 
-#[allow(unused)]
 fn non_copy_type() {
     let the_tuple = (Box::new(1), Box::new(2));   
 
