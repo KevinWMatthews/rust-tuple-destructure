@@ -11,6 +11,10 @@ name = "destructure"
 path = "src/destructure.rs"
 
 [[bin]]
+name = "destructure_custom_type"
+path = "src/destructure_custom_type.rs"
+
+[[bin]]
 name = "destructure_ref"
 path = "src/destructure_ref.rs"
 
