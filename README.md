@@ -18,3 +18,9 @@ After installing Rust and Cargo, run example code using:
 $ cargo run
 ```
 
+This will show a list of available binaries.
+Run one an individual binary using:
+
+```rust
+$ cargo run --bin <binary_name>
+```
